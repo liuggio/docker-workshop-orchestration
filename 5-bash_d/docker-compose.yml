@@ -2,11 +2,15 @@ version: '2'
 services:
   web:
     build: .
-    image: bash_d
+    image: liuggio/bashd
     ports:
      - "8080"
     networks:
       - mynet
+    volumes:
+       - ./app:/app
+    depends_on:
+      - "redis"
     labels:
       - "com.workshop.web.description=ssh"
       - "com.workshop.web.version=v1"
@@ -20,6 +24,7 @@ services:
 
 networks:
   mynet:
+    driver: bridge
 
 
 

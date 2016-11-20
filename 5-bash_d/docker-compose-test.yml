@@ -1,0 +1,10 @@
+version: '2'
+services:
+  test:
+    build: .
+    image: liuggio/bashd
+    depends_on:
+      - "web"
+    command: bash -c "sleep 10 && curl -v web:8080"
+    networks:
+      - mynet

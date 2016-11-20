@@ -4,9 +4,9 @@ WORKDIR /app
 
 COPY app /app
 
-RUN chmod +x /app/server.sh && \
-    apk add --update bash figlet --no-cache --update-cache && \
-     rm -rf /var/cache/apk/*
+RUN apk add --update bash curl figlet --no-cache --update-cache && \
+    rm -rf /var/cache/apk/* && \
+    chmod +x /app/server.sh
 
 EXPOSE 8080
 

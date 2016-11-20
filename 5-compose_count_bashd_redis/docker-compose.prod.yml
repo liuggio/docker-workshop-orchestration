@@ -1,8 +1,0 @@
-version: '2'
-services:
-  web:
-    environment:
-     - ENV_ENVIRONMENT=production
-    restart: always
-  redis:
-    restart: always
