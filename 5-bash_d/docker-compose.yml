@@ -25,6 +25,3 @@ services:
 networks:
   mynet:
     driver: bridge
-
-
-

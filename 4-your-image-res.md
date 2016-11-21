@@ -1,4 +1,4 @@
-3 - Let's create and use your image
+4 - Let's create and use your image
 -----------------------------------
 
 ```

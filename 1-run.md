@@ -1,4 +1,4 @@
-Cap 1. Let's run the box
+Cap. 1 - Let's run the box
 -------------------------
 
 #### Run a echo
@@ -111,3 +111,16 @@ Dangerous:
 
 `docker run --oom-kill-disable -m 4M --memory-swap 4M alpine sh -c "bomb() { bomb | bomb; }; bomb"`
 
+### Excercise
+
+#### n.1a Run it!
+run: 
+
+`while true;do echo -e "HTTP/1.1 200 OK\n\n "$(date) | nc -l -p 1500;done`
+
+Into an alpine container with 4M of Ram 
+
+
+#### n.1b Test it!
+
+Test that the server is serving http container1-run.md

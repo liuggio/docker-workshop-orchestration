@@ -1,4 +1,4 @@
-3 - Let's create and use your image
+Cap. 4 - Let's create and use your image
 -----------------------------------
 
     docker images
@@ -28,6 +28,12 @@ You can tag it and run
 Pushing the image to docker hub
 
     docker push vendor/name:tagname
+    
+#### Excercise 4.a
+    
+Install `figlet` into alpine
+and create your image.
+    
    
 ### Dockerfile
 
@@ -61,6 +67,10 @@ https://github.com/nginxinc/docker-nginx/blob/master/stable/jessie/Dockerfile
     
     CMD ["nginx", "-g", "daemon off;"]
 
+### layers
+
+Each Run and each From is a layer 
+
 ### Docker build
 
     docker build . -t tagname
@@ -69,6 +79,29 @@ https://github.com/nginxinc/docker-nginx/blob/master/stable/jessie/Dockerfile
     docker exec -it tagname /bin/sh
     docker commit ...
 
-### EXERCISE 5 create your dockerfile
+### EXERCISE 4.b create your Dockerfile
 
-https://gist.github.com/liuggio/b023328e375759c47cae#file-5_dockerfile_bash_http_server-md
+The goal is to write your `Dockerfile`, build it with a tag name,
+and run exposing the 8080 port.
+
+Test it with the following script:
+
+``` sh
+#!/usr/bin/env sh
+
+docker build  -t test-bashd . || exit 1
+pid=$(docker run -d -p 8080:8080 test-bashd)
+wget -O /tmp/index.html localhost:8080 || exit 2
+
+docker logs $pid
+docker rm -f $pid;
+
+echo "\n\n\n--------------------\nBuild ok!"
+exit 0;
+```
+
+### EXERCISE 4.c Add figlet to your image
+
+Add figlet and push to docker hub
+
+### EXERCISE 4.d Push it to docker hub :)

@@ -1,4 +1,4 @@
-2 - Let's build a daemon
+Cap. 2 - Let's build a daemon
 ------------------------
 
 Little bashism
@@ -55,17 +55,28 @@ try to reach it
 
 and impossible to reach 1500 :(
 
-Guess why?
+### EXERCISE 2.a Try to reach port 1500
+
+### EXERCISE 2.b basic server   10 min
+
+Pull down this Docker image from the Docker Hub: atbaker/nginx-example
+
+This Docker image uses the Nginx webserver to serve a static HTML website.
+
+Start a new container from the atbaker/nginx-example image that exposes port 80 from the container to port 8000 on your host.
+
+Open a web browser and go to http://localhost:8000
 
 
-### EXERCISE 1 basic server   10 min
+### EXERCISE 2.c basic server 10 min 
 
-https://gist.github.com/liuggio/b023328e375759c47cae#file-1_exercise_basic-server-md  
+Use the image of the above exercise `atbaker/nginx-example`
+and modify `/usr/share/nginx/html/index.html` in order to have:
+with  
 
-### EXERCISE 2 basic server 10 min 
+![https://screencloud.net/v/qQfP](https://sc-cdn.scaleengine.net/i/f4a24d078be54fd72b18daf70e0edbed1.png)
 
-https://gist.github.com/liuggio/b023328e375759c47cae#file-2_exercise_basic-server-md  
+###EXERCISE 2.d (cleanup) 10 min
 
-###EXERCISE 3 (cleanup) 10 min
-
-https://gist.github.com/liuggio/b023328e375759c47cae#file-3_exercise_cleanup-md 
+You have to cleanup your local images and old containers regulary.
+Write a single line command to delete all container exited
