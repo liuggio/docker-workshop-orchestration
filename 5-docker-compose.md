@@ -22,4 +22,8 @@ Create your docker-compose file that executes the daemon you built in 2.a
  
 How to balance?
 
+
+## Decoupling 5_bash_d
+
+see folder 5-microservices
     

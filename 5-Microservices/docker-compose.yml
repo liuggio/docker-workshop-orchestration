@@ -1,0 +1,34 @@
+version: '2'
+services:
+  backend:
+    build: backend
+    networks:
+      - backend
+      - frontend
+    volumes:
+       - ./backend/app:/app
+    depends_on:
+      - "redis"
+    environment:
+      - ENV_ENVIRONMENT=development
+      - ENV_INCR_NAME=hit
+  frontend:
+    build: frontend
+    ports:
+      - "8099:80"
+    networks:
+      - frontend
+    volumes:
+       - ./frontend/app:/app
+    depends_on:
+      - "backend"
+  redis:
+    image: redis:alpine
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
+  frontend:
+    driver: bridge
