@@ -123,4 +123,6 @@ Into an alpine container with 4M of Ram
 
 #### n.1b Test it!
 
-Test that the server is serving http container1-run.md
+Test that 
+ - you can access the server through your browser
+ - it replies with the current date updating every second
