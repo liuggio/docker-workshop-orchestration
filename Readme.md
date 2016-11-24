@@ -25,6 +25,5 @@ Follow the
   
 # my tmate screen 
 
-- https://tmate.io/t/ro-I8f6ADmlm1WZubXnTreFmghX8
-- ssh ro-I8f6ADmlm1WZubXnTreFmghX8@am2.tmate.io
-https://goo.gl/iUfYkn 
+Thu Nov 24 10:56:00 2016 [tmate] web session read only: https://tmate.io/t/ro-I8f6ADmlm1WZubXnTreFmghX8
+Thu Nov 24 10:56:00 2016 [tmate] ssh session read only: ssh ro-I8f6ADmlm1WZubXnTreFmghX8@ln2.tmate.io
