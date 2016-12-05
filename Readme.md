@@ -19,12 +19,3 @@ Follow the
  9. Microservices
  10. docker Swarm-mode
  
-# form
- 
-  goo.gl/A5mXA7
-  
-# my tmate screen 
-
-- https://tmate.io/t/ro-I8f6ADmlm1WZubXnTreFmghX8
-- ssh ro-I8f6ADmlm1WZubXnTreFmghX8@am2.tmate.io
-https://goo.gl/iUfYkn 
