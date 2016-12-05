@@ -18,4 +18,4 @@ Follow the
  8. DC/OS
  9. Microservices
  10. docker Swarm-mode
- 
+ 11. Microservices Layered architecture
