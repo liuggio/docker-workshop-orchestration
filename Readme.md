@@ -19,3 +19,8 @@ Follow the
  9. Microservices
  10. docker Swarm-mode
  11. Microservices Layered architecture
+
+## watch it live
+
+web session read only: https://tmate.io/t/ro-9hCp35eXRpKEGbOKipKMmKAZg
+ssh session read only: ssh ro-9hCp35eXRpKEGbOKipKMmKAZg@ln2.tmate.io
