@@ -22,5 +22,8 @@ Follow the
 
 ## watch it live
 
-web session read only: https://tmate.io/t/ro-9hCp35eXRpKEGbOKipKMmKAZg
-ssh session read only: ssh ro-9hCp35eXRpKEGbOKipKMmKAZg@ln2.tmate.io
+```
+web session read only: https://tmate.io/t/ro-ccVVJ01Kgx6roZAgqXMMLi58C
+ssh session read only: ssh ro-ccVVJ01Kgx6roZAgqXMMLi58C@ln2.tmate.io
+
+```
